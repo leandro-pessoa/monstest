@@ -1,8 +1,8 @@
+// componentes
+import Header from '@/patterns/Header'
 
 const Home = () => {
-    return (
-        <p>Home</p>
-    )
+    return <Header />
 }
 
 export default Home

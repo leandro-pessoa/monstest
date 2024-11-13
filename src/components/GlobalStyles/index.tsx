@@ -33,6 +33,11 @@ const GlobalStyles = createGlobalStyle`
     body {
         line-height: 1;
         background-color: ${stylesVariables.colors.black};
+        height: 100vh;
+        font-family: ${stylesVariables.fonts.primaryFont};
+        color: ${stylesVariables.colors.white};
+        font-weight: 400;
+        font-size: 1rem;
     }
     ol, ul {
         list-style: none;
