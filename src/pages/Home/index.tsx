@@ -1,8 +1,15 @@
 // componentes
 import Header from '@/patterns/Header'
+import BackgroundImage from './styles'
 
 const Home = () => {
-    return <Header />
+    return (
+        <BackgroundImage>
+            <div className='content'>
+                <Header />
+            </div>
+        </BackgroundImage>
+    )
 }
 
 export default Home
