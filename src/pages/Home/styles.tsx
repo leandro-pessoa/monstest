@@ -1,6 +1,7 @@
 // funções
 import styled from 'styled-components'
 
+// imagens
 import image from '@/assets/home-background.png'
 
 const BackgroundImage = styled.div`

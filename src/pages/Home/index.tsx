@@ -4,11 +4,11 @@ import BackgroundImage from './styles'
 
 const Home = () => {
     return (
-        <BackgroundImage>
-            <div className='content'>
-                <Header />
-            </div>
-        </BackgroundImage>
+            <BackgroundImage>
+                <div className='content'>
+                    <Header />
+                </div>
+            </BackgroundImage>
     )
 }
 
