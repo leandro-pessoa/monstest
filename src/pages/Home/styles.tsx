@@ -6,6 +6,7 @@ import image from '@/assets/home-background.png'
 
 const BackgroundImage = styled.div`
     position: relative;
+    height: 100vh;
 
     &:before {
         position: absolute;
@@ -22,6 +23,7 @@ const BackgroundImage = styled.div`
 
     .content {
         position: relative;
+        height: 100%;
     }
 `
 
