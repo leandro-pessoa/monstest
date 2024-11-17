@@ -37,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: ${stylesVariables.fonts.primaryFont};
         color: ${stylesVariables.colors.white};
         font-weight: 400;
-        font-size: 1rem;
+        font-size: ${stylesVariables.fonts.size.small};
     }
     ol, ul {
         list-style: none;

@@ -23,6 +23,10 @@ const StyledNavLink = styled(NavLink)`
     &.active {
         color: ${stylesVariables.colors.white};
     }
+
+    @media screen and (min-width: ${stylesVariables.breakpoints.laptop}) {
+        font-size: ${stylesVariables.fonts.size.default};
+    }
 `
 
 export { StyledLi, StyledNavLink }

@@ -10,14 +10,13 @@ const StyledButton = styled.button`
     background-color: transparent;
     color: ${stylesVariables.colors.white};
     font-family: ${stylesVariables.fonts.primaryFont};
-    font-size: 1.2rem;
+    font-size: ${stylesVariables.fonts.size.default};
     border-radius: 48px;
-    padding: 4px 40px;
+    padding: 4px 25px;
 
     &:hover {
         background-color: ${stylesVariables.colors.blue};
         transition: ease 0.2s;
-        transform: translate(-2px, -2px);
     }
 
     &:not(:hover) {
@@ -26,6 +25,11 @@ const StyledButton = styled.button`
 
     &:active {
         transform: translate(2px, 2px);
+    }
+
+    @media screen and (min-width: ${stylesVariables.breakpoints.laptop}) {
+        font-size: 1.2rem;
+        padding: 4px 40px;
     }
 `
 
