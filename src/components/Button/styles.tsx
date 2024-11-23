@@ -12,7 +12,7 @@ const StyledButton = styled.button`
     font-family: ${stylesVariables.fonts.primaryFont};
     font-size: ${stylesVariables.fonts.size.default};
     border-radius: 48px;
-    padding: 4px 25px;
+    padding: 4px 15px;
 
     &:hover {
         background-color: ${stylesVariables.colors.blue};
@@ -25,6 +25,10 @@ const StyledButton = styled.button`
 
     &:active {
         transform: translate(2px, 2px);
+    }
+
+    @media screen and (min-width: ${stylesVariables.breakpoints.smartphone}) {
+        padding: 4px 25px;
     }
 
     @media screen and (min-width: ${stylesVariables.breakpoints.laptop}) {

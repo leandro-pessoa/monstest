@@ -15,7 +15,7 @@ const StyledNav = styled.nav<StyledNavProps>`
     position: fixed;
     top: ${stylesVariables.headerHeight}px;
     left: 0;
-    background-color: #00bbff14;
+    background-color: ${stylesVariables.colors.blue}14;
     height: 100vh;
     padding: 3rem;
     backdrop-filter: blur(3px);
@@ -26,6 +26,10 @@ const StyledNav = styled.nav<StyledNavProps>`
 
     ul {
         ${flex('column', 'flex-start', 'center', '2rem')}
+    }
+
+    @media screen and (min-width: ${stylesVariables.breakpoints.smartphone}) {
+        backdrop-filter: blur(0px);
     }
 
     @media screen and (min-width: ${stylesVariables.breakpoints.tablet}) {

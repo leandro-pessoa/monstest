@@ -13,10 +13,13 @@ import { stylesVariables } from '@/stylesVariables'
 
 // actions
 import { closeNav } from '@/features/reducers/app'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Nav = () => {
     const dispatch = useAppDispatch()
     const navDisplay = useAppSelector(selectNavDisplay)
+    const {pathname} = useLocation()
 
     // essa função fechará o nav lateral quando a tela do dispositivo chegar a 768px
     window.addEventListener('resize', () => {
@@ -27,6 +30,11 @@ const Nav = () => {
             dispatch(closeNav())
         }
     })
+
+    // fecha o nav lateral ao trocar de tela
+    useEffect(() => {
+        dispatch(closeNav())
+    }, [pathname, dispatch])
 
     return (
         <StyledNav $navDisplay={navDisplay}>

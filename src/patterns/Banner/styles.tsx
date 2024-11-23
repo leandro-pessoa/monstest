@@ -9,7 +9,7 @@ const StyledSection = styled.section`
     ${flex('row', 'center', 'center')}
     height: calc(100% - ${stylesVariables.headerHeight}px);
     text-align: center;
-    padding: 0 3rem;
+    padding: 0 2rem;
 
     h2 {
         font-size: 1.5rem;
@@ -20,6 +20,12 @@ const StyledSection = styled.section`
         }
     }
 
+    @media screen and (min-width: ${stylesVariables.breakpoints.smartphone}) {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    
     @media screen and (min-width: ${stylesVariables.breakpoints.tablet}) {
         justify-content: flex-start;
         padding-left: 15%;
