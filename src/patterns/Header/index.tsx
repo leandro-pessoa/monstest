@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import NavButton from '../Nav/NavButton'
 
 // imagens
-import logo from '@/assets/logo.png'
+import logo from '@/assets/images/logo.png'
 
 const Header = () => {
     return <StyledHeader>

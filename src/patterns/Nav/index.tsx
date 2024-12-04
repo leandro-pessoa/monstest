@@ -40,7 +40,7 @@ const Nav = () => {
         <StyledNav $navDisplay={navDisplay}>
             <ul>
                 <NavItem to='/'>Início</NavItem>
-                <NavItem to='/a'>Sobre</NavItem>
+                <NavItem to='/sobre'>Sobre</NavItem>
                 <NavItem to='/b'>Nossos serviços</NavItem>
                 <NavItem to='/c'>Apresentações</NavItem>
             </ul>

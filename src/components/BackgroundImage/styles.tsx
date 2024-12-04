@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 
 // imagens
-import image from '@/assets/home-background.png'
+import image from '@/assets/images/home-background.png'
 
 const StyledBackground = styled.div`
     position: relative;
