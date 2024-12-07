@@ -28,8 +28,8 @@ const StyledSection = styled.section`
     
     @media screen and (min-width: ${stylesVariables.breakpoints.tablet}) {
         justify-content: flex-start;
-        padding-left: 15%;
         text-align: start;
+        padding-left: 15%;
 
         h2 {
             font-size: 2rem;
